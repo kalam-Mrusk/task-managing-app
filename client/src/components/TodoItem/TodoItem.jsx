@@ -34,8 +34,8 @@ const TodoItem = ({
     if (incompleteDetails) return notify("incomplete details.");
     try {
       const res = await axios.put(
-        `http://localhost:8080/api/todo-app/todo/${todoId}/update`,
-        // `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/update`,
+        // `http://localhost:8080/api/todo-app/todo/${todoId}/update`,
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/update`,
         {
           todoTitle: title,
           todoDiscription: discription,
@@ -55,8 +55,8 @@ const TodoItem = ({
 
     try {
       const res = await axios.delete(
-        `http://localhost:8080/api/todo-app/todo/${todoId}/delete`
-        // `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/delete`
+        // `http://localhost:8080/api/todo-app/todo/${todoId}/delete`
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/delete`
       );
       if (res) {
         notify("todo removed.");

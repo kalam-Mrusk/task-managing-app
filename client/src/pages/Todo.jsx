@@ -23,8 +23,8 @@ const Todo = () => {
   const userLogOut = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/todo-app/user/auth/logout",
-        // "https://mern-stack-todo-server.onrender.com/api/todo-app/user/auth/logout",
+        // "http://localhost:8080/api/todo-app/user/auth/logout",
+        "https://mern-stack-todo-server.onrender.com/api/todo-app/user/auth/logout",
 
         {
           withCredentials: true,
@@ -49,8 +49,8 @@ const Todo = () => {
       // dispatch(loadingStart());
       setHandler(true);
       const res = await axios.post(
-        "http://localhost:8080/api/todo-app/todo/create",
-        // "https://mern-stack-todo-server.onrender.com/api/todo-app/todo/create",
+        // "http://localhost:8080/api/todo-app/todo/create",
+        "https://mern-stack-todo-server.onrender.com/api/todo-app/todo/create",
         {
           todoTitle: title,
           todoDiscription: discription,
@@ -77,8 +77,8 @@ const Todo = () => {
   const getAllTodo = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/todo-app/todo/get",
-        // "https://mern-stack-todo-server.onrender.com/api/todo-app/todo/get",
+        // "http://localhost:8080/api/todo-app/todo/get",
+        "https://mern-stack-todo-server.onrender.com/api/todo-app/todo/get",
         { withCredentials: true }
       );
       if (res) {
