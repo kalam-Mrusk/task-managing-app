@@ -1,0 +1,124 @@
+.todoPageContainer {
+  margin: auto;
+}
+.todoHeader {
+  background-color: rgb(71, 150, 220);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 20px;
+  padding: 0.5rem 1rem;
+}
+.todoHeader .fullname {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(202, 164, 40);
+}
+.userProfile {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  border: 1px solid #b0b0b08c;
+  background-color: #f2f1f1;
+  z-index: 2;
+  top: 3.3rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.userProfile2 {
+  display: none;
+}
+.todoHeader button {
+  border: none;
+  padding: 4px 8px;
+  background-color: rgb(237, 82, 82);
+  border-radius: 5px;
+}
+.todoPageInputSection {
+  box-shadow: 0px 0px 15px 0px #53535378;
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(193, 194, 194, 0.47);
+}
+.todoPageContainer .writeTodoImg {
+  display: block;
+  margin: 3rem auto 1.5rem;
+  height: 70px;
+}
+.todoPageContainer h2 {
+  text-align: center;
+  margin: 3rem 0px 1.5rem;
+}
+.todoPageInputSection input {
+  width: 100%;
+  padding: 6px 8px;
+  margin: 15px 0px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #8f8f8f80;
+}
+.todoPageInputSection textarea {
+  resize: none;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 100%;
+  max-height: 70px;
+  min-height: 70px;
+  padding: 6px 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid #8f8f8f80;
+}
+.todoPageInputSection button {
+  width: 90px;
+  padding: 5px 0px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px auto;
+  font-size: 16px;
+  background-color: #51a2fe;
+}
+
+.todoPageItemContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  gap: 10px;
+}
+@media (max-width: 600px) {
+  .todoHeader .fullname {
+    font-size: 16px;
+  }
+  .todoPageInputSection {
+    margin: 1rem;
+  }
+}
+
+/* Footer.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.footer p {
+  margin: 0;
+}
