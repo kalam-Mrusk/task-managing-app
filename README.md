@@ -1,6 +1,6 @@
-# MERN Stack To-Do App
+# Task Managing App
 
-This is a MERN stack to-do application that allows users to manage their tasks efficiently. The app supports adding multiple sub-tasks and includes JWT authentication for secure user login and registration.
+This is a MERN stack task managing application that allows users to manage their tasks efficiently. The app supports adding multiple sub-tasks and includes JWT authentication for secure user login and registration.
 
 ## Features
 
@@ -37,7 +37,7 @@ This is a MERN stack to-do application that allows users to manage their tasks e
 1. Clone the repository:
 
    \```bash
-   git clone https://github.com/kalam-Mrusk/Mern-Stack-Todo-App
+   git clone https://github.com/kalam-Mrusk/task-managing-app
    cd Mern-Stack-Todo-App
    \```
 
