@@ -79,8 +79,8 @@ const TodoItem = ({
     if (handle === true) return;
     try {
       const res = await axios.post(
-        `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo`,
-        // `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo`,
+        // `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo`,
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo`,
         {
           subTodoTitle,
           subTodoDiscription,
